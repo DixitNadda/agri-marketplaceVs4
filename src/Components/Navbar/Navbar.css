@@ -1,0 +1,37 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5%;
+}
+
+#abc {  
+    width: 3.3vw;
+    height: 7vh;
+    object-fit: contain;
+    margin-left: 5%;
+    margin-right: 30%;
+    margin-bottom: 0.3%;
+    transform: translateY(10%);
+    border-radius: 50%;
+}
+
+.navItem {
+    color: rgb(144, 77, 6);
+    text-decoration: none;
+    margin-left: -30%;
+    margin-right: 60%;
+}
+
+#links {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-right: -100px;
+    margin-left: 3%;
+    margin-right: 10%;
+    transform: translateX(100px);
+}
+#links a{
+    text-decoration: none;
+}

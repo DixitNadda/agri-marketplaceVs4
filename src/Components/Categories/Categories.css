@@ -1,0 +1,19 @@
+#categories{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 10%;
+}
+.link{
+    text-decoration: none;
+    color: #CC6F00;
+    margin-top: 2%;
+    margin-right: 10%;
+    margin-bottom: 1%;
+}
+#rulerM{
+    height: 2px;
+    width: 100%;
+    background-color: rgb(161, 159, 159);
+}
