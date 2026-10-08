@@ -35,19 +35,19 @@ const LoginSignup = () => {
           </form>
           <div className="submit-container">
             <div className={action === "Login" ? "submit gray" : "submit"} onClick= {()=> {setAction("Sign Up");
-              if (name?.trim() && phone?.trim() && psd?.trim()) {
+              if(action === "Login") {
+                alert("Directing to Sign Up.") 
+              } else if (name?.trim() && phone?.trim() && psd?.trim()) {
                 alert(name +" signed up")
-              } else if(action === "Login") {
-                alert("Directing to Sign Up.")
               } else {
                 alert("Fill all the fields.")
               }
             }}>Sign Up</div>
             <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick= {()=> {setAction("Login");
-              if (phone?.trim() && psd?.trim()) {
-                alert(phone +" Logged in")
-              } else if(action === "Sign Up") {
-                alert("Directing to Login.")
+               if(action === "Sign Up") {
+                 alert("Directing to Login.")
+              } else if (phone?.trim() && psd?.trim()) {
+                 alert(phone +" Logged in")
               } else {
                 alert("Fill all the fields.")
               }
