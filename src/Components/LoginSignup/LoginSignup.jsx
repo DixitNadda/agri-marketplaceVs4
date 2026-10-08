@@ -13,6 +13,7 @@ const LoginSignup = () => {
     <>
         <div className="container">
           <h1 className="hero">{action}</h1>
+          <form>
           <div className="inputs">
             {action === "Login"? <div></div>: <div className="input">
               <FaUser/>
@@ -51,6 +52,7 @@ const LoginSignup = () => {
               }
             }}>Login</div>
           </div>
+          </form>
         </div>
     </>
   )
