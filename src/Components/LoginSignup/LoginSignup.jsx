@@ -32,6 +32,7 @@ const LoginSignup = () => {
                 onChange={(e) => setPassword(e.target.value)}/><br />
             </div>
           </div>
+          </form>
           <div className="submit-container">
             <div className={action === "Login" ? "submit gray" : "submit"} onClick= {()=> {setAction("Sign Up");
               if (name?.trim() && phone?.trim() && psd?.trim()) {
@@ -52,7 +53,6 @@ const LoginSignup = () => {
               }
             }}>Login</div>
           </div>
-          </form>
         </div>
     </>
   )
